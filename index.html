@@ -3,148 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#090909">
 
-<title>KKK EXCHANGE - WhatsApp</title>
+<title>KKK EXCHANGE - WhatsApp & Telegram</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:"Segoe UI",Arial,sans-serif;
-  -webkit-tap-highlight-color:transparent;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
-html,body{
-  overflow-x:hidden;
+html, body {
+  overflow-x: hidden;
 }
 
-body{
-  background:#090909;
-  color:#fff;
-  min-height:100vh;
-  min-height:100dvh;
-  display:flex;
-  flex-direction:column;
+body {
+  background: #090909;
+  color: #fff;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
-header{
-  background:#0b0b0b;
-  border-bottom:1px solid rgba(212,170,65,.25);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:16px;
-  position:sticky;
-  top:0;
-  z-index:10;
+header {
+  background: #0b0b0b;
+  border-bottom: 1px solid rgba(212,170,65,.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.logo-row{
-  display:flex;
-  align-items:center;
-  gap:11px;
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
 
-.wa-icon{
-  width:35px;
-  height:35px;
-  border-radius:50%;
-  background:#25D366;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 0 14px rgba(37,211,102,.25);
+.wa-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 14px rgba(37,211,102,.25);
 }
 
-.wa-icon svg{
-  width:21px;
-  height:21px;
-  fill:#fff;
+.wa-icon svg {
+  width: 21px;
+  height: 21px;
+  fill: #fff;
 }
 
-.brand-name{
-  font-size:21px;
-  font-weight:800;
-  letter-spacing:1px;
-  color:#f1d27a;
+.brand-name {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #f1d27a;
 }
 
-main{
-  flex:1;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  padding:45px 20px 55px;
-
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 20px 55px;
   background:
-    radial-gradient(
-      circle at 50% 28%,
-      rgba(211,168,57,.12),
-      transparent 30%
-    ),
-    linear-gradient(
-      180deg,
-      #111111 0%,
-      #090909 100%
-    );
+    radial-gradient(circle at 50% 28%, rgba(211,168,57,.12), transparent 30%),
+    linear-gradient(180deg, #111111 0%, #090909 100%);
 }
 
-.logo-box{
-  width:min(330px,90vw);
-  text-align:center;
+.logo-box {
+  width: min(330px, 90vw);
+  text-align: center;
 }
 
-.kkk-logo{
-  width:100%;
-  height:auto;
-  display:block;
+.kkk-logo {
+  width: 100%;
+  height: auto;
+  display: block;
   filter:
     drop-shadow(0 0 8px rgba(212,170,65,.15))
     drop-shadow(0 8px 20px rgba(0,0,0,.6));
 }
 
-.gold-main{
-  fill:url(#goldGradient);
+.gold-main {
+  fill: url(#goldGradient);
 }
 
-.gold-dark{
-  fill:url(#darkGold);
+.gold-dark {
+  fill: url(#darkGold);
 }
 
-.gold-shine{
-  fill:url(#shineGradient);
+.gold-shine {
+  fill: url(#shineGradient);
 }
 
-.logo-subtitle{
-  margin-top:5px;
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(30px,8vw,43px);
-  font-weight:700;
-  letter-spacing:.35em;
-  padding-left:.35em;
-  color:#d5aa45;
-  text-shadow:0 2px 8px rgba(0,0,0,.8);
+.logo-subtitle {
+  margin-top: 5px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 8vw, 43px);
+  font-weight: 700;
+  letter-spacing: .35em;
+  padding-left: .35em;
+  color: #d5aa45;
+  text-shadow: 0 2px 8px rgba(0,0,0,.8);
 }
 
-.tagline{
-  margin-top:27px;
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(20px,5vw,27px);
-  font-weight:600;
-  letter-spacing:3px;
-  color:#f0d27b;
-  text-align:center;
-  text-transform:uppercase;
+.tagline {
+  margin-top: 27px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(20px, 5vw, 27px);
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #f0d27b;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.divider{
-  width:min(310px,75vw);
-  height:2px;
-  margin:27px auto 0;
-
-  background:linear-gradient(
+.divider {
+  width: min(310px, 75vw);
+  height: 2px;
+  margin: 27px auto 0;
+  background: linear-gradient(
     90deg,
     transparent,
     #8e6a25,
@@ -152,129 +143,171 @@ main{
     #8e6a25,
     transparent
   );
-
-  box-shadow:0 0 8px rgba(220,175,70,.35);
+  box-shadow: 0 0 8px rgba(220,175,70,.35);
 }
 
-.description{
-  margin-top:28px;
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(14px,4vw,18px);
-  letter-spacing:4px;
-  color:#b9933c;
-  text-align:center;
-  text-transform:uppercase;
+.description {
+  margin-top: 28px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(14px, 4vw, 18px);
+  letter-spacing: 4px;
+  color: #b9933c;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.cta{
-  margin-top:38px;
-  width:100%;
-  max-width:360px;
+.cta {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 360px;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 700;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
+.cta svg {
+  width: 27px;
+  height: 27px;
+  fill: #fff;
+  flex-shrink: 0;
+}
 
-  padding:17px 20px;
-
-  background:linear-gradient(
-    135deg,
-    #19c879,
-    #0b9f5c
-  );
-
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:16px;
-
-  color:#fff;
-  text-decoration:none;
-
-  font-size:20px;
-  font-weight:700;
-
+.whatsapp {
+  background: linear-gradient(135deg, #19c879, #0b9f5c);
   box-shadow:
     0 7px 25px rgba(20,190,105,.25),
     inset 0 1px 0 rgba(255,255,255,.2);
-
-  transition:
-    transform .15s ease,
-    box-shadow .15s ease;
 }
 
-.cta svg{
-  width:29px;
-  height:29px;
-  fill:#fff;
+.telegram {
+  margin-top: 16px;
+  background: linear-gradient(135deg, #29b6f6, #0878cf);
+  box-shadow:
+    0 7px 25px rgba(0,136,204,.25),
+    inset 0 1px 0 rgba(255,255,255,.2);
 }
 
-.cta:active{
-  transform:scale(.97);
+.fallback-note {
+  width: 100%;
+  max-width: 380px;
+  margin-top: 25px;
+  padding: 17px;
+  border: 1px solid rgba(212,170,65,.3);
+  border-radius: 12px;
+  background: rgba(212,170,65,.05);
+  text-align: center;
+  line-height: 1.7;
 }
 
-.prefill{
-  margin-top:30px;
-  font-size:17px;
-  color:#858585;
-  text-align:center;
+.note-en {
+  color: #f1d27a;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-footer{
-  background:#050505;
-  border-top:1px solid rgba(212,170,65,.2);
-  color:#ddd;
-  padding:30px 20px calc(18px + env(safe-area-inset-bottom));
-  text-align:center;
+.note-hi {
+  margin-top: 8px;
+  color: #e3c46d;
+  font-size: 14px;
 }
 
-.footer-brand{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:24px;
-  font-weight:700;
-  letter-spacing:5px;
-  color:#d7ad4d;
+.telegram-text {
+  display: inline-block;
+  margin-top: 7px;
+  color: #53baff;
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
-.footer-exchange{
-  margin-top:6px;
-  font-size:12px;
-  letter-spacing:7px;
-  color:#8e6a28;
+.prefill {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #858585;
+  text-align: center;
 }
 
-.footer-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:13px 24px;
-  max-width:420px;
-  margin:27px auto 0;
-  font-size:15px;
+footer {
+  background: #050505;
+  border-top: 1px solid rgba(212,170,65,.2);
+  color: #ddd;
+  padding: 30px 20px calc(18px + env(safe-area-inset-bottom));
+  text-align: center;
 }
 
-.footer-grid a{
-  color:#c9c9c9;
-  text-decoration:none;
-  padding:4px 0;
+.footer-brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #d7ad4d;
 }
 
-.copyright{
-  margin-top:25px;
-  font-size:12px;
-  color:#666;
+.footer-exchange {
+  margin-top: 6px;
+  font-size: 12px;
+  letter-spacing: 7px;
+  color: #8e6a28;
 }
 
-@media(min-width:600px){
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px 24px;
+  max-width: 420px;
+  margin: 27px auto 0;
+  font-size: 15px;
+}
 
-  .cta:hover{
-    transform:translateY(-3px);
+.footer-grid a {
+  color: #c9c9c9;
+  text-decoration: none;
+  padding: 4px 0;
+}
 
-    box-shadow:
-      0 12px 30px rgba(20,190,105,.35),
-      inset 0 1px 0 rgba(255,255,255,.2);
+.copyright {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #666;
+}
+
+@media (min-width: 600px) {
+  .cta:hover {
+    transform: translateY(-3px);
   }
 
-  .logo-box{
-    width:370px;
+  .logo-box {
+    width: 370px;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .brand-name {
+    font-size: 19px;
+  }
+
+  .cta {
+    font-size: 17px;
+  }
+
+  .note-en,
+  .note-hi {
+    font-size: 13px;
   }
 }
 </style>
@@ -300,6 +333,7 @@ height="1"
 width="1"
 style="display:none"
 src="https://www.facebook.com/tr?id=1078309934792018&ev=PageView&noscript=1"
+alt=""
 />
 </noscript>
 <!-- End Meta Pixel Code -->
@@ -309,212 +343,158 @@ src="https://www.facebook.com/tr?id=1078309934792018&ev=PageView&noscript=1"
 <body>
 
 <header>
-
   <div class="logo-row">
-
     <div class="wa-icon">
-
-      <svg viewBox="0 0 24 24">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
       </svg>
-
     </div>
-
     <span class="brand-name">KKK EXCHANGE</span>
-
   </div>
-
 </header>
 
 <main>
 
   <div class="logo-box">
-
-    <svg
-      class="kkk-logo"
-      viewBox="0 0 700 260"
-      xmlns="http://www.w3.org/2000/svg">
+    <svg class="kkk-logo" viewBox="0 0 700 260"
+         xmlns="http://www.w3.org/2000/svg" aria-label="KKK logo">
 
       <defs>
-
-        <linearGradient
-          id="goldGradient"
-          x1="0"
-          y1="0"
-          x2="0"
-          y2="1">
-
+        <linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#f4d477"/>
           <stop offset="35%" stop-color="#d8ad4b"/>
           <stop offset="65%" stop-color="#a87920"/>
           <stop offset="100%" stop-color="#e2bd61"/>
-
         </linearGradient>
 
-        <linearGradient
-          id="darkGold"
-          x1="0"
-          y1="0"
-          x2="1"
-          y2="1">
-
+        <linearGradient id="darkGold" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0%" stop-color="#8a621b"/>
           <stop offset="50%" stop-color="#e2bd61"/>
           <stop offset="100%" stop-color="#704b12"/>
-
         </linearGradient>
 
-        <linearGradient
-          id="shineGradient"
-          x1="0"
-          y1="0"
-          x2="1"
-          y2="0">
-
+        <linearGradient id="shineGradient" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stop-color="#8e671f"/>
           <stop offset="50%" stop-color="#fff0b0"/>
           <stop offset="100%" stop-color="#91691f"/>
-
         </linearGradient>
-
       </defs>
 
       <!-- LEFT K -->
-
       <g class="gold-main">
-
         <rect x="55" y="35" width="28" height="190"/>
         <rect x="55" y="35" width="95" height="25"/>
         <rect x="55" y="200" width="100" height="25"/>
-
-        <polygon
-          points="82,105 145,35 185,35 110,125"/>
-
-        <polygon
-          points="105,110 185,225 145,225 82,140"/>
-
+        <polygon points="82,105 145,35 185,35 110,125"/>
+        <polygon points="105,110 185,225 145,225 82,140"/>
       </g>
 
       <!-- MIDDLE K -->
-
       <g class="gold-dark">
-
         <rect x="260" y="35" width="28" height="190"/>
         <rect x="260" y="35" width="95" height="25"/>
         <rect x="260" y="200" width="100" height="25"/>
-
-        <polygon
-          points="287,105 350,35 390,35 315,125"/>
-
-        <polygon
-          points="310,110 390,225 350,225 287,140"/>
-
+        <polygon points="287,105 350,35 390,35 315,125"/>
+        <polygon points="310,110 390,225 350,225 287,140"/>
       </g>
 
       <!-- RIGHT K -->
-
       <g class="gold-main">
-
         <rect x="465" y="35" width="28" height="190"/>
         <rect x="465" y="35" width="95" height="25"/>
         <rect x="465" y="200" width="100" height="25"/>
-
-        <polygon
-          points="492,105 555,35 595,35 520,125"/>
-
-        <polygon
-          points="515,110 595,225 555,225 492,140"/>
-
+        <polygon points="492,105 555,35 595,35 520,125"/>
+        <polygon points="515,110 595,225 555,225 492,140"/>
       </g>
 
-      <!-- GOLD SHINE -->
-
-      <polygon
-        points="90,195 170,150 180,160 100,205"
-        class="gold-shine"
-        opacity=".7"/>
-
-      <polygon
-        points="295,195 375,150 385,160 305,205"
-        class="gold-shine"
-        opacity=".7"/>
-
-      <polygon
-        points="500,195 580,150 590,160 510,205"
-        class="gold-shine"
-        opacity=".7"/>
-
+      <polygon points="90,195 170,150 180,160 100,205"
+               class="gold-shine" opacity=".7"/>
+      <polygon points="295,195 375,150 385,160 305,205"
+               class="gold-shine" opacity=".7"/>
+      <polygon points="500,195 580,150 590,160 510,205"
+               class="gold-shine" opacity=".7"/>
     </svg>
 
-    <div class="logo-subtitle">
-      EXCHANGE
-    </div>
-
+    <div class="logo-subtitle">EXCHANGE</div>
   </div>
 
-  <div class="tagline">
-    KISMAT KA KHEL
-  </div>
-
+  <div class="tagline">KISMAT KA KHEL</div>
   <div class="divider"></div>
+  <div class="description">TRADE YOUR PASSION FOR SPORTS</div>
 
-  <div class="description">
-    TRADE YOUR PASSION FOR SPORTS
-  </div>
-
-  <!-- WhatsApp -->
-
+  <!-- WHATSAPP BUTTON -->
   <a
-    class="cta"
-    href="https://wa.me/918306950369?text=Hello%2C%20I%20want%20new%20%21D"
+    class="cta whatsapp"
+    href="https://wa.me/18382346116?text=Hello%2C%20I%20want%20new%20%21D"
     target="_blank"
-    rel="noopener"
-    onclick="fbq('trackCustom','WhatsAppContact');">
+    rel="noopener noreferrer"
+    onclick="if(typeof fbq==='function')fbq('trackCustom','WhatsAppContact');">
 
-    <svg viewBox="0 0 24 24">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M20.52 3.48A11.86 11.86 0 0012.06 0C5.49 0 .15 5.34.15 11.91c0 2.1.55 4.16 1.6 5.97L.05 24l6.26-1.64a11.9 11.9 0 005.75 1.47h.01c6.57 0 11.91-5.34 11.91-11.91a11.85 11.85 0 00-3.46-8.44zM12.07 21.78h-.01a9.87 9.87 0 01-5.03-1.37l-.36-.22-3.72.98.99-3.63-.24-.37a9.84 9.84 0 01-1.51-5.26c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.98 2.89a9.83 9.83 0 012.9 6.99c0 5.45-4.44 9.88-9.89 9.88zm5.42-7.4c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"/>
     </svg>
 
-    Whatsapp Now
-
+    <span>WhatsApp Now</span>
   </a>
 
-  <p class="prefill">
-    Hello, I want new !D
-  </p>
+  <!-- TELEGRAM BUTTON -->
+  <a
+    class="cta telegram"
+    href="https://t.me/kkkbonline"
+    target="_blank"
+    rel="noopener noreferrer"
+    onclick="if(typeof fbq==='function')fbq('trackCustom','TelegramContact');">
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M21.94 4.67 18.8 19.5c-.24 1.05-.86 1.31-1.74.82l-4.8-3.54-2.32 2.23c-.26.26-.48.48-.98.48l.35-4.89 8.9-8.04c.39-.35-.08-.55-.61-.2L6.6 13.3 1.9 11.83c-1.02-.32-1.04-1.02.21-1.5L20.5 3.2c.85-.31 1.6.2 1.44 1.47z"/>
+    </svg>
+
+    <span>Join on Telegram</span>
+  </a>
+
+  <!-- ENGLISH AND HINDI FALLBACK NOTE -->
+  <div class="fallback-note">
+
+    <p class="note-en">
+      If WhatsApp is not working, please visit Telegram.
+    </p>
+
+    <p class="note-hi" lang="hi">
+      अगर WhatsApp काम नहीं कर रहा है, तो कृपया Telegram पर जाएँ।
+    </p>
+
+    <a
+      class="telegram-text"
+      href="https://t.me/kkkbonline"
+      target="_blank"
+      rel="noopener noreferrer">
+      t.me/kkkbonline
+    </a>
+
+  </div>
+
+  <p class="prefill">Hello, I want new !D</p>
 
 </main>
 
 <footer>
 
-  <div class="footer-brand">
-    KKK
-  </div>
-
-  <div class="footer-exchange">
-    EXCHANGE
-  </div>
+  <div class="footer-brand">KKK</div>
+  <div class="footer-exchange">EXCHANGE</div>
 
   <div class="footer-grid">
-
     <a href="#">What we do</a>
     <a href="#">Who we are</a>
-
     <a href="#">Features</a>
     <a href="#">About us</a>
-
     <a href="#">Blog</a>
     <a href="#">Careers</a>
-
     <a href="#">Security</a>
     <a href="#">Brand Center</a>
-
     <a href="#">For Business</a>
     <a href="#">Privacy</a>
-
     <a href="#">Use WhatsApp</a>
     <a href="#">Need help?</a>
-
   </div>
 
   <p class="copyright">
